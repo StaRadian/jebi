@@ -1,0 +1,14 @@
+# jebi
+
+## Introduction
+
+STM32G474 로봇 라이브러리
+
+## Installation
+
+```bash
+cd jebi_driver
+git clone --branch 5.9.0 --depth 1 https://github.com/ARM-software/CMSIS_5.git
+git clone --branch v1.2.5 --depth 1 https://github.com/STMicroelectronics/cmsis-device-g4.git
+git clone --branch v1.2.5 --depth 1 https://github.com/STMicroelectronics/stm32g4xx-hal-driver.git
+```
