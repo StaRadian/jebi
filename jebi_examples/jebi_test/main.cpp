@@ -6,7 +6,6 @@
 #include "stm32g4xx_ll_system.h"
 #include "stm32g4xx_ll_utils.h"
 #include "stm32g4xx_ll_exti.h"
-#include "stm32g4xx_ll_usart.h"
 #include "stm32g4xx_ll_pwr.h"
 
 #include "led.hpp"
@@ -29,7 +28,7 @@ int main(void)
 	init();
 
 	jebi::LED red_led(GPIOF, LL_GPIO_PIN_10);
-	jebi::USART usart;
+	jebi::USART usart(USART1);
 
 	usart.gpio(GPIOC, LL_GPIO_PIN_4);
 	usart.gpio(GPIOC, LL_GPIO_PIN_5);
